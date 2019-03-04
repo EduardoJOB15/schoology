@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Course | Schoology</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/costum.css" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.ico">
+
+    <style>
+      .btn-button{
+        background-color: #2880c5; 
+        border-color: #2880c5; 
+        cursor: pointer;
+      }
+
+      .btn-button:hover{
+        background-color: #1b5683;
+        border-color: #1b5683;
+      }
+
+      #letra{
+        color: white;
+      }
+
+      .sub:hover{
+        text-decoration: underline;
+      }
+
+      .btn-lista{
+        background-color: transparent;
+      }
+      .div-mayor{
+        background: #64831b;
+      }
+      #btn-post{
+        background-color: #2880c5; 
+        border-color: #2880c5; 
+        cursor: pointer;
+        margin-left: 420px
+      }
+      #ancla-grades{
+        margin-left: 20px;
+        margin-top: 20px;
+      }
+    </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #2880c5">
+      <a class="navbar-brand" href="#"><img src="img/logo.png" width="140" height="30" style="padding-bottom: 5px"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="btn-group btn-group-toggle " data-toggle="buttons" >
+        <label class="btn btn-primary btn-button"> 
+          <input type="radio" name="options" id="option1" autocomplete="off" checked> COURSES
+        </label>
+        <label class="btn btn-primary btn-button">
+          <input type="radio" name="options" id="option2" autocomplete="off"> GROUPS
+        </label>
+        <label class="btn btn-primary btn-button">
+          <input type="radio" name="options" id="option3" autocomplete="off"> RESOURCES
+        </label>
+        <label class="btn btn-primary btn-button">
+          <input type="radio" name="options" id="option3" autocomplete="off"> GRADES
+        </label>
+      </div>
+      <div class="btn-group btn-group-toggle " data-toggle="buttons" >
+          <label class="btn btn-primary btn-button" style="margin-left: 460px"> 
+            <input type="radio" name="options" id="option1" autocomplete="off" checked><img src="img/lupa.png" style="width: 30px">
+          </label>
+          <label class="btn btn-primary btn-button">
+            <input type="radio" name="options" id="option2" autocomplete="off"><img src="img/calendary.png" style="width: 30px">
+          </label>
+          <label class="btn btn-primary btn-button">
+            <input type="radio" name="options" id="option3" autocomplete="off"><img src="img/mensaje.png" style="width: 30px">
+          </label>
+          <label class="btn btn-primary btn-button">
+            <input type="radio" name="options" id="option3" autocomplete="off"><img src="img/campana.png" style="width: 30px">
+          </label>
+      </div>
+      <div class="dropdown">
+          <a class="btn btn-secondary dropdown-toggle btn-button" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            @Usuario
+          </a>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+        <a class="dropdown-item" href="#">Your Profile</a>
+        <a class="dropdown-item" href="#">Universidad Nacional Autonoma de Honduras</a>
+        <a class="dropdown-item" href="#">Setting</a>
+        <a class="dropdown-item" href="#">Logout</a>
+      </div>
+    </nav>
+  </header>
+<!--   cuerpo  -->
+
+
+<!-- div's ocultos -->
+<!-- esto se puede en html y javaScrip, mirar: "anotaciones personales.txt" -->
+<!--  para mejor conrol modificar esto en Js en el 2do parcial -->
+<div class="container-fluid">
+    <!-- Example row of columns -->
+    <div class="row">
+      <!--menu de items-->
+      <div class="col-xl-2 well">
+          <a><img src="img/curso1.png"></a>
+          <ul>
+            <li>
+                <button type="button" class="btn-lista">
+                  <a href="#info1" class="inf"><img src="img/materials.png"><span>Materials</span></a><span><button Style="height: 15px"></button></span>
+                </button>
+            </li>
+            <li>
+                <button type="button" class="btn-lista">
+                <a href="#info2" class="inf"><img src="img/updates.png"><span>Updates</span></a>
+                </button>
+            </li>
+            <li>
+                <button type="button" class="btn-lista">
+                <a href="#info3" class="inf"><img src="img/grades.png"><span>Grades</span></a>
+                </button>
+              </li>
+            <li>
+                <button type="button" class="btn-lista">
+                <a href="#info4" class="inf"><img src="img/attendance.png"><span>Attendance</span></a>
+                </button>
+              </li>
+            <li>
+               <button type="button" class="btn-lista">
+               <a href="#info5" class="inf"><img src="img/members.png"><span>Members</span></a>
+               </button>
+            </li>
+          </ul>
+      </div>
+           <!--fin de menu--> 
+      <div id="info1" class="col-xl-10 well oculto">
+          <div class="alert alert-primary">
+            <div class="row">
+              <hi><a><span>IS410-Programacion Orientada a Objetos: I-2019</span><img src="img/icono-cuaderno.png"></a></hi>
+              <button type="button" style="margin-left: 50%"><a><img src="img/sobre.png"><span> Notifications</span></a></button>
+              <hr>
+            </div>
+            <!-- contenido debajo de h1 -->
+            <hr>
+            <div class="conteiner-fluid">
+              <div class="row">
+                <div class="col-xl-8 border-right">
+                   <div></div>
+                   <hr>
+                   <div class="row">
+                    <!-- ancla para la carpeta documentos -->
+                       <button type="button" style="margin-right: 2px"></button><img src="img/folder.png" style="height: 20px"><a style="margin-left: 2px">Documentos</a>
+                     <!---->
+                   </div>
+                   <hr>
+                   <div class="row">
+                    <!-- ancla para la carpeta documentos -->
+                       <button type="button" style="margin-right: 2px"></button><img src="img/folder.png" style="height: 20px"><a style="margin-left: 2px">Enunciados</a>
+                     <!---->
+                   </div>
+                   <hr>
+                  <div class="row">
+                     <!-- ancla para la carpeta documentos -->
+                        <button type="button" style="margin-right: 2px"></button><img src="img/folder.png" style="height: 20px"><a style="margin-left: 2px">Enregas</a>
+                      <!---->
+                  </div>
+                  <hr>
+                  <div class="row">
+                     <!-- ancla para el blog -->
+                       <div class="col-xl-1">
+                         <img src="img/blog-icon.png">
+                       </div>
+                       <div class="col-xl-7">
+                         <a>Equipos para el proyecto</a>
+                         <p>Comentar los equipos para el proyecto bajo este foro. Límite es de dos personas.</p>
+                         <span>Due Tuesday, June 12, 2018 at 12:59 am</span>
+                       </div>
+                      <!---->
+                   </div>
+                   <hr>
+                   <div class="row">
+                      <!-- ancla para github -->
+                         <img src="img/github-icon.png" style="height: 20px"><a style="margin-left: 5px">Repositorio de ejercicios de clase</a>
+                       <!---->
+                     </div>
+                   <hr>
+                </div>
+
+                <div class="col-xl-2">
+                  <p style="font-weight: bold">Upcoming .<span><a><img src="img/attendance.png"></a></span></p>
+                  <hr>
+                  <p>No upcoming assignments or events</p>
+                </div>
+            <!-- fin div grande -->
+          </div>
+        </div>
+        <!--      ejemplo gia:   
+          <div class="col-sm-4 col-xs well">
+            <button type="button" class="btn-lista"><a href="#info1" class="inf"><img src="img/members.png">esta</a><span><button type="button"></button></span></button>
+          </div>
+
+          <div id="info1" class="col-xs-12 well oculto">
+              <p>Texto 1</p>
+            </div>
+           -->
+    </div>
+    <hr>
+  </div> <!-- /container -->
+<!--fin de info1-->
+   <div id="info2" class="col-xl-10 well oculto">
+     <div class="alert alert-primary">
+        <div class="row">
+            <hi><a><span>IS410-Programacion Orientada a Objetos: I-2019</span><img src="img/icono-cuaderno.png"></a></hi>
+            <button type="button" style="margin-left: 50%"><a><img src="img/sobre.png"><span> Notifications</span></a></button>
+            <hr>
+          </div>
+          <!--bajo h1-->
+          <hr>
+          <div class="conteiner-fluid">
+            <div class="row">
+              <div class="col-xl-8 border-right">
+                <textarea class="col-xl-8"></textarea><br/>
+                <button id="btn-post" type="button"><p class="text-light">Post</p></button>
+              </div>
+              <div class="col-xl-2">
+                  <p style="font-weight: bold">Upcoming .<span><a><img src="img/attendance.png"></a></span></p>
+                  <hr>
+                  <p>No upcoming assignments or events</p>
+              </div>
+            </div>
+          </div>
+     </div>
+   </div>
+   <!--fin de info2-->
+   <div id="info3" class="col-xl-10">
+     <div class="alert alert-primary">
+       <a id="ancla-drades">IS410-Programacion Orientada a Objetos: I ...</a>
+       <h1>IS410-Programacion Orientada a Objetos: I ...</h1>
+       <hr>
+       <div></div>
+       <hr>
+       <div class="row">
+         <div class="col-xl-5">
+           <!--ancla para menu desplegable-->
+           <a><button type="button"></button>(no grading period)<span>(0%)</span></a>
+           <!---->
+         </div>
+         <div class="col-xl-5">
+          <!--futuro objeso JS-->
+            <p style="text-align:center">-</p>
+          <!---->
+         </div>
+       </div>
+       <div class="alert alert-dark" role="alert">
+         <div class="row">
+           <p style="margin-left: 42%">Curse Grade:</p><span>N/A</span>
+        </div>
+       </div>
+     </div>
+   </div>
+   <!--fin de info3-->
+   <div id="info4" class="col-xl-10">
+     <div class="alert alert-primary">
+        <a id="ancla-drades">IS410-Programacion Orientada a Objetos: I ...</a>
+        <h1>IS410-Programacion Orientada a Objetos: I ...</h1>
+        <hr>
+        <div></div>
+        <div clas="conteiner-fluid">
+            <div class="row">
+             <div class="col-xl-8">
+               <hr>
+                <div class="row">
+                    <p style="margin-left: 7px">Absent</p><span style="margin-left: 5px">0</span><p style="margin-left: 20%">Late</p><span style="margin-left: 5px">0</span><p style="margin-left: 20%">Excused</p><span style="margin-left: 5px">0</span>
+                  </div>
+                  <hr>
+                  <div class="row">
+                      <p style="margin-left: 7px">None</p><p style="margin-left: 23%">None</p><p style="margin-left: 20%">None</p>
+                  </div>
+                  <p style="margin-top: 5%">Coments</p>
+                  <div class="alert alert-dark" role="alert">
+                      <div class="row">
+                        <p style="margin-left: 42%">No coments</p>
+                     </div>
+                    </div> 
+             </div>
+            </div>
+          </div>
+        <hr>
+           <div class="col-xl-2"></div>
+     </div>
+   </div>
+<!--fin de info4-->
+   <div id="info5" class="col-xl-10">
+    <div class="alert alert-primary">
+      <div class="row">
+        <a id="ancla-drades">IS410-Programacion Orientada a Objetos: I ...</a>
+        <button type="button" style="margin-left: 55%"><a><img src="img/sobre.png"><span> Notifications</span></a></button>
+      </div>
+        <h1>IS410-Programacion Orientada a Objetos: I ...</h1>
+        <hr>
+        <div></div>
+        <div class="row">
+          <button type="button" class="btn-button"><p>All</p></button>
+          <leable><a>Members</a></leable>
+          <leable><a>Admins</a></leable>
+          <!--barra de busqueda-->
+          <nav class="navbar navbar-light bg-light">
+              <form class="form-inline">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <!--<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>-->
+              </form>
+            </nav>
+        </div>
+        <hr>
+       <div class="row">
+         <div class="col-xl-8 border-right">hola</div>
+         <div class="col-xl-2">adios</div>
+       </div> 
+    </div>
+   </div>
+
+<!-- fin de divs's ocultos -->
+
+<!--   fin de cuerpo   -->  
+  <footer>
+      <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #1b5683; margin-top: 541px">
+          <a class="navbar-brand sub" href="#" id="letra" style="padding-bottom: 6px; font-size: 1rem">English</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link sub" href="#" style="padding-left:590px" id="letra">Support</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link sub" href="#" id="letra">Schoology Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link sub" href="#" id="letra">Privacy Policy</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link sub" href="#" id="letra">Terms of Use</a>
+              </li>
+              <h1 style="font-size: 0.9rem; padding-top: 10px; height: 30px; width: 120px; margin-left: 90px; color: white">Schoology © 2019</h1>
+            </ul>
+          </div>
+        </nav>
+  </footer>
+
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/course-controlador.js"></script>
+</body>
+</html>
