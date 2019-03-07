@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Course | Schoology</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/costum.css" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.ico">
+
+    <style>
+      .btn-button{
+        background-color: #2880c5; 
+        border-color: #2880c5; 
+        cursor: pointer;
+      }
+
+      .btn-button:hover{
+        background-color: #1b5683;
+        border-color: #1b5683;
+      }
+
+      #letra{
+        color: white;
+      }
+
+      .sub:hover{
+        text-decoration: underline;
+      }
+
+      .btn-lista{
+        background-color: transparent;
+      }
+      .div-mayor{
+        background: #64831b;
+      }
+      #btn-post{
+        background-color: #2880c5; 
+        border-color: #2880c5; 
+        cursor: pointer;
+        margin-left: 420px
+      }
+      #ancla-grades{
+        margin-left: 20px;
+        margin-top: 20px;
+      }
+    </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #2880c5">
+      <a class="navbar-brand" href="#"><img src="img/logo.png" width="140" height="30" style="padding-bottom: 5px"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="btn-group btn-group-toggle " data-toggle="buttons" >
+        <label class="btn btn-primary btn-button"> 
+          <input type="radio" name="options" id="option1" autocomplete="off" checked> COURSES
+        </label>
+        <label class="btn btn-primary btn-button">
+          <input type="radio" name="options" id="option2" autocomplete="off"> GROUPS
+        </label>
+        <label class="btn btn-primary btn-button">
+          <input type="radio" name="options" id="option3" autocomplete="off"> RESOURCES
+        </label>
+        <label class="btn btn-primary btn-button">
+          <input type="radio" name="options" id="option3" autocomplete="off"> GRADES
+        </label>
+      </div>
+      <div class="btn-group btn-group-toggle " data-toggle="buttons" >
+          <label class="btn btn-primary btn-button" style="margin-left: 460px"> 
+            <input type="radio" name="options" id="option1" autocomplete="off" checked><img src="img/lupa.png" style="width: 30px">
+          </label>
+          <label class="btn btn-primary btn-button">
+            <input type="radio" name="options" id="option2" autocomplete="off"><img src="img/calendary.png" style="width: 30px">
+          </label>
+          <label class="btn btn-primary btn-button">
+            <input type="radio" name="options" id="option3" autocomplete="off"><img src="img/mensaje.png" style="width: 30px">
+          </label>
+          <label class="btn btn-primary btn-button">
+            <input type="radio" name="options" id="option3" autocomplete="off"><img src="img/campana.png" style="width: 30px">
+          </label>
+      </div>
+      <div class="dropdown">
+          <a class="btn btn-secondary dropdown-toggle btn-button" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            @Usuario
+          </a>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+        <a class="dropdown-item" href="#">Your Profile</a>
+        <a class="dropdown-item" href="#">Universidad Nacional Autonoma de Honduras</a>
+        <a class="dropdown-item" href="#">Setting</a>
+        <a class="dropdown-item" href="#">Logout</a>
+      </div>
+    </nav>
+  </header>
+<!--   cuerpo  -->
+<div class="container-fluid">
+   <div class="row">
+      <div class="col-xl-1">
+         <button type="button"><a><img src="img/icono-cuaderno.png"></a>Search</button><br>
+         <button type="button" id="personal"><a><img src="img/folder.png"></a>Personal</button><br> 
+         <button type="button" id="group"><a><img src="img/blog-icon">Group</a></button><br> 
+         <button type="button" id="apps"><a><img src="img/updates.png"></a>Apps</button><br>
+      </div>
+<!-- divs de la derecha -->
+      <div class="col-xl-11">
+          <div class="row">
+                <div class="col-xl-3" id="personal1">
+                        <div class=row>
+                          <button type="button"></button>
+                          <p>My Resources</p>
+                          <button type="button"><a><img src="img/folder.png"></a></button>
+                          <button type="button"></button>
+                          <hr>
+                        </div>
+                    </div>
+                    <div class="col-xl-8" id="personal2">
+                        <div class="row">
+                            <a><img src="img/folder.png"></a><p>Home</p>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <button type="button"><a><img src="img/folder.png"></a>Add Resources<button type="button"></button></button>
+                            <hr>
+                        </div>
+                        <div class="row">
+                            <input type="checkbox" name="chk-resource" id="chk-r" value="0">
+                            <p>Title</p>
+                            <p>0of0</p>
+                        </div>
+                        <hr>
+                        <div></div>
+                        <p>There are currently no items in this collection</p>
+                        <div></div>
+                    </div>
+                  <!--fin de personal--> 
+                   <div class="col-xl-3" id="group1">
+                     <div class="row">
+                        <button type="button"></button><p>Group Resources</p>
+                     </div>
+                    <p>No Groups</p>
+                    <hr>
+                   </div>
+                   <div class="col-xl-8" id="group2">
+                      <div class="row">
+                          <a><img src="img/escuela-icon.png"></a><p>User Schoolo</p>
+                      </div>
+                      <hr>
+                      <div class="row">
+                          <p>Title</p>
+                          <p>0of0</p>
+                      </div>
+                      <hr>
+                      <div></div>
+                      <p>There are currently no items in this collection</p>
+                      <div></div>
+                  </div>
+                  <!--fin de group-->
+                  <div class="col-xl-3" id="apps1">
+                      <div class="row">
+                         <button type="button"></button><p>My Resources Apps</p>
+                      </div>
+                     <label>Instal Apps</label>
+                     <hr>
+                    </div>
+                   <!--fin apps--> 
+          </div>
+      </div>
+   </div>
+</div>
+<!-- fin de divs -->
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script>
+(function ocultarinicio(){
+  $('#group1').fadeOut(1);
+  $('#group2').fadeOut(1);
+  $('#apps1').fadeOut(1);
+})();
+
+function quitar1(){
+  $('#group1').fadeOut(1);
+  $('#group2').fadeOut(1);
+  $('#apps1').fadeOut(1);
+};
+
+function quitar2(){
+  $('#personal1').fadeOut(1);
+  $('#personal2').fadeOut(1);
+  $('#apps1').fadeOut(1);
+};
+
+function quitar3(){
+  $('#personal1').fadeOut(1);
+  $('#personal2').fadeOut(1);
+  $('#group1').fadeOut(1);
+  $('#group2').fadeOut(1);
+};
+$('#personal').click(function poner1(){
+            $('#personal1').fadeIn(2);
+            $('#personal2').fadeIn(2);
+            (quitar1())();
+        });
+$('#group').click(function poner2(){
+            $('#group1').fadeIn(2);
+            $('#group2').fadeIn(2);
+            (quitar2())();
+        });
+$('#apps').click(function poner3(){
+            $('#apps1').fadeIn(2);
+            /*aqui falta una ventana emergente*/
+            (quitar3())();
+        });
+/*$('#btn-ocultar-parrafo').click();        */
+
+</script>
+<!--   fin de cuerpo   -->  
+  <footer>
+      <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #1b5683; margin-top: 541px">
+          <a class="navbar-brand sub" href="#" id="letra" style="padding-bottom: 6px; font-size: 1rem">English</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link sub" href="#" style="padding-left:590px" id="letra">Support</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link sub" href="#" id="letra">Schoology Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link sub" href="#" id="letra">Privacy Policy</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link sub" href="#" id="letra">Terms of Use</a>
+              </li>
+              <h1 style="font-size: 0.9rem; padding-top: 10px; height: 30px; width: 120px; margin-left: 90px; color: white">Schoology © 2019</h1>
+            </ul>
+          </div>
+        </nav>
+  </footer>
+
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/course-controlador.js"></script>
+</body>
+</html>
